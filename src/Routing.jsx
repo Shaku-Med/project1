@@ -5,7 +5,7 @@ import io from 'socket.io-client'
 import Profile from './Components/Profile/Profile'
 import Preview from './Components/Preview/Preview'
 
-let socket = io('http://localhost:3001')
+let socket = io('https://ournodes.herokuapp.com')
 function Routing() {
   return (
    <Routes>

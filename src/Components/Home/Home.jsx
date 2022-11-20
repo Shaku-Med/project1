@@ -11,7 +11,7 @@ function Home() {
     const [datainfo, setdatainfo] = useState('')
 
     useEffect(() => { 
-        axios.post("http://localhost:3001/all/user/owner", { 
+        axios.post("https://ournodes.herokuapp.com/all/user/owner", { 
             uuid: Cookies.get("c_user")
         }).then(res => { 
             if(res.data !== "error"){ 
@@ -28,7 +28,7 @@ function Home() {
     const [chatme, setchatme] = useState([])
     useEffect(() => { 
         
-        axios.post("http://localhost:3001/messages/chat/grabs_all", { 
+        axios.post("https://ournodes.herokuapp.com/messages/chat/grabs_all", { 
             uuid: Cookies.get('c_user')
         }).then(res => { 
             setchatme(res.data)

@@ -13,7 +13,7 @@ function Profile() {
     let {id} = useParams()
 
     useEffect(() => { 
-        axios.post("http://localhost:3001/all/user/profile", { 
+        axios.post("https://ournodes.herokuapp.com/all/user/profile", { 
             uuid: id
         }).then(res => { 
             if(res.data !== "error"){ 
@@ -59,7 +59,7 @@ function Profile() {
                                 uuid: Cookies.get("c_user"),
                                flee: file
                             }
-                            axios.post("http://localhost:3001/upload/coverpic/now", arr,  { 
+                            axios.post("https://ournodes.herokuapp.com/upload/coverpic/now", arr,  { 
                                 headers: { 
                                     'Content-Type': 'multipart/form-data'
                                 }
@@ -99,7 +99,7 @@ function Profile() {
                                                 uuid: Cookies.get("c_user"),
                                                flee: file
                                             }
-                                            axios.post("http://localhost:3001/upload/profilepic/now", arr,  { 
+                                            axios.post("https://ournodes.herokuapp.com/upload/profilepic/now", arr,  { 
                                                 headers: { 
                                                     'Content-Type': 'multipart/form-data'
                                                 }
