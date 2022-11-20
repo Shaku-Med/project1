@@ -1,25 +1,22 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Slash",
+  "name": "Slash",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1024px-Facebook_icon_%28black%29.svg.png",
+      "sizes": "1024x1024",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1024px-Facebook_icon_%28black%29.svg.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "1024x1024"
     },
     {
-      "src": "logo512.png",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1024px-Facebook_icon_%28black%29.svg.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "1024x1024"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display": "standalone"
 }

@@ -1,0 +1,183 @@
+
+
+
+    
+:root{ 
+    --mainbg: #fff;
+    --maincl: #121212;
+}
+
+.norma { 
+    background: var(--mainbg);
+    color: var(--maincl);
+}
+
+.center_imagexs i:hover{ 
+    background: var(--maincl);
+    color: var(--mainbg);
+}
+
+body{ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.user_chat { 
+    max-width: 300px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.user_chat { 
+    background: var(--mainbg);
+    border: 1px solid var(--maincl);
+    border-radius: 5px;
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.user_chat.chat_chow { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.user_chat li { 
+    cursor: pointer;
+}
+
+.user_chat li:hover{ 
+    opacity: 0.6;
+}
+
+.whats_on_mind { 
+    max-width: 85%;
+}
+
+.head_part_main { 
+    max-width: 800px;
+    padding:10px;
+    border: 1px solid var(--maincl);
+    border-radius: 5px;
+}
+
+.mainima { 
+    padding: 40px;
+}
+
+.postupload { 
+    padding:10px;
+    background: red;
+}
+
+.whats_on_mind { 
+    overflow: auto;
+    overflow-wrap: nowrap;
+    text-overflow: clip;
+    word-break: keep-all;
+    word-wrap: nowrap;
+    color: var(--maincl);
+    background: var(--mainbg);
+}
+
+.outchats{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+header{ 
+    position: sticky;
+    top:0;
+    left: 0;
+}
+
+.overscrollme { 
+    overflow: auto;
+    overflow-x: hidden;
+    height: 100%;
+    max-height: 450px;
+}
+
+.overscrollme::-webkit-scrollbar{ 
+    display: none;
+}
+
+#cols { 
+    border-radius: 5px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.ouinput { 
+    position: fixed;
+    background: white;
+    bottom:0;
+}
+
+
+@media screen and (max-width: 650px) {
+    .center_imagexs { 
+        width: 7rem;
+    }
+
+    .user_chat { 
+        max-width: 280px;
+        max-height: 200px;
+    }
+
+    .mainima { 
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .center_imagexs i { 
+        font-size: 25px;
+        width: 5rem;
+    }
+    .ourimg img { 
+        width: 2rem;
+        display: none;
+    }
+    .ourimg { 
+        display: none;
+    }
+    .logo { 
+        display: none;
+    }
+   
+    .user_chat { 
+        max-width: 250px;
+    }
+
+  
+}
+
+@media (prefers-color-scheme: dark){ 
+
+    :root{ 
+        --mainbg: #121212;
+        --maincl: #fff;
+    }
+
+}
