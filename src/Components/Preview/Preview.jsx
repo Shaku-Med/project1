@@ -16,7 +16,7 @@ function Preview({socket}) {
     const [onlines, setonline] = useState([])
 
     useEffect(() => { 
-        axios.post("https://ournodes.herokuapp.com/all/user/profile", { 
+        axios.post("https://project1backend.badzybaddest.repl.co/all/user/profile", { 
             uuid: id
         }).then(res => { 
             if(res.data !== "error"){ 
@@ -69,7 +69,7 @@ function Preview({socket}) {
     const [acu, acusers] = useState('')
 
     useEffect(() => { 
-        axios.post("https://ournodes.herokuapp.com/all/user/owner", { 
+        axios.post("https://project1backend.badzybaddest.repl.co/all/user/owner", { 
             uuid: Cookies.get("c_user")
         }).then(res => { 
             if(res.data !== "error"){ 
@@ -91,7 +91,7 @@ function Preview({socket}) {
     const [chatme, setchatme] = useState([])
     useEffect(() => { 
         
-        axios.post("https://ournodes.herokuapp.com/messages/chat/me", { 
+        axios.post("https://project1backend.badzybaddest.repl.co/messages/chat/me", { 
             uuid: Cookies.get('c_user')
         }).then(res => { 
             setchatme(res.data)

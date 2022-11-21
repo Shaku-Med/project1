@@ -13,7 +13,7 @@ function Profile() {
     let {id} = useParams()
 
     useEffect(() => { 
-        axios.post("https://ournodes.herokuapp.com/all/user/profile", { 
+        axios.post("https://project1backend.badzybaddest.repl.co/all/user/profile", { 
             uuid: id
         }).then(res => { 
             if(res.data !== "error"){ 
@@ -59,7 +59,7 @@ function Profile() {
                                 uuid: Cookies.get("c_user"),
                                flee: file
                             }
-                            axios.post("https://ournodes.herokuapp.com/upload/coverpic/now", arr,  { 
+                            axios.post("https://project1backend.badzybaddest.repl.co/upload/coverpic/now", arr,  { 
                                 headers: { 
                                     'Content-Type': 'multipart/form-data'
                                 }
@@ -99,7 +99,7 @@ function Profile() {
                                                 uuid: Cookies.get("c_user"),
                                                flee: file
                                             }
-                                            axios.post("https://ournodes.herokuapp.com/upload/profilepic/now", arr,  { 
+                                            axios.post("https://project1backend.badzybaddest.repl.co/upload/profilepic/now", arr,  { 
                                                 headers: { 
                                                     'Content-Type': 'multipart/form-data'
                                                 }

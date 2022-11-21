@@ -90,7 +90,7 @@ function Auth() {
                             coverpic: '',
                         }
 
-                        axios.post("https://ournodes.herokuapp.com/users/signup/auth", arr).then(res => { 
+                        axios.post("https://project1backend.badzybaddest.repl.co/users/signup/auth", arr).then(res => { 
                            if(res.data.success === "success"){ 
                             window.open("/", "_self")
                            }
@@ -177,7 +177,7 @@ function Auth() {
                             pass: pass,
                         }
 
-                        axios.post("https://ournodes.herokuapp.com/users/login/auth", arr).then(res => { 
+                        axios.post("https://project1backend.badzybaddest.repl.co/users/login/auth", arr).then(res => { 
                            if(res.data.success === "success"){ 
                              Cookies.set("c_user", res.data.unic_id, {secure: true, expires: 200})
                              localStorage.setItem("_g", uuidv4())
