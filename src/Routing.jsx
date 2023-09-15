@@ -1,11 +1,11 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Home from './Components/Home/Home'
-import io from 'socket.io-client'
+// import io from 'socket.io-client'
 import Profile from './Components/Profile/Profile'
 import Preview from './Components/Preview/Preview'
 
-function Routing() {
+function Routing({socket) {
   return (
    <Routes>
     <Route path='/' element={<Home socket={socket}/>}/>
