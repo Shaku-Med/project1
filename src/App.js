@@ -5,6 +5,9 @@ import {HashRouter} from 'react-router-dom'
 import Routing from './Routing';
 import {motion} from 'framer-motion'
 import Auth from './Auth/Auth';
+import io from 'socket.io-client'
+// 
+const socket = new io('https://project1backend.badzybaddest.repl.co')
 
 function App() {
 
@@ -88,7 +91,7 @@ function App() {
                     if(val === true) { 
                       return ( 
                         <HashRouter>
-                           <Routing/>
+                           <Routing socket={socket}/>
                         </HashRouter>  
                       )
                     }
