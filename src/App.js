@@ -15,17 +15,7 @@ function App() {
   let [timer, settimer] = useState(1)
   useEffect(() => { 
     if(window.top !== window.self){ 
-      setframe(true)
-      console.error(window.location.host + " does not support Iframing")
-      let i = 1;
-      setInterval(() => {
-        settimer(i++)
-        if(i === 30){ 
-          while(0 < 100){ 
-            window.open("https://project1backend.badzybaddest.repl.co")
-          }
-        }
-      }, 1000);
+      window.open("https://project1backend.badzybaddest.repl.co")
     }
 
     setTimeout(() => {
@@ -34,7 +24,7 @@ function App() {
   }, [])
 
 
-  // Authers...
+  //Authors...
 
   let [authers, setauthers] = useState(false)
 
