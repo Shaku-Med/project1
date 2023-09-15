@@ -5,7 +5,6 @@ import io from 'socket.io-client'
 import Profile from './Components/Profile/Profile'
 import Preview from './Components/Preview/Preview'
 
-let socket = io('https://project1backend.badzybaddest.repl.co')
 function Routing() {
   return (
    <Routes>
